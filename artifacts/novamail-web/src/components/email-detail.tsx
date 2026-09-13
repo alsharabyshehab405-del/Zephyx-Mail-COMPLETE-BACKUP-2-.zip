@@ -994,29 +994,29 @@ export function EmailDetail({ email, onReply, onReplyAll, onForward, onClose, cu
             )}
           </Button>
 
-          <div className="flex items-center gap-1">
+          <div className="flex shrink-0 items-center gap-1">
             <select value={summaryMode} onChange={(event) => setSummaryMode(event.target.value as SummaryMode)} aria-label={t("email.summaryMode")} className="h-8 rounded-md border bg-background px-2 text-xs">
               <option value="short">{t("email.shortSummary")}</option>
               <option value="detailed">{t("email.detailedSummary")}</option>
               <option value="key_points">{t("email.keyPoints")}</option>
               <option value="action_items">{t("email.actionItems")}</option>
             </select>
-            <Button type="button" variant="ghost" size="sm" onClick={() => void handleSummarize()} disabled={aiBusy} title={t("email.summarizeThread")}>
+            <Button type="button" variant="ghost" size="sm" className="shrink-0 whitespace-nowrap toolbar-text-btn" onClick={() => void handleSummarize()} disabled={aiBusy} title={t("email.summarizeThread")}>
               <Sparkles className="me-1 h-4 w-4" /> {t("email.smartSummary")}
             </Button>
           </div>
-            <Button type="button" variant="ghost" size="sm" onClick={() => void handleCategorize()} disabled={aiBusy} title={t("email.categoryAction")}>{t("email.categoryAction")}</Button>
-            <Button type="button" variant="ghost" size="sm" onClick={() => void handleLoadActions()} disabled={actionsBusy} title={t("email.actionCenter")}><ListTodo className="me-1 h-4 w-4" />{t("email.actionCenter")}</Button>
-          <div className="flex items-center gap-1">
-            <input type="datetime-local" value={snoozeUntil} onChange={(event) => setSnoozeUntil(event.target.value)} min={new Date(Date.now() + 60_000).toISOString().slice(0, 16)} className="h-8 w-36 rounded-md border bg-background px-1 text-xs" aria-label={t("email.snoozeUntil")} />
-            <Button type="button" variant="ghost" size="sm" onClick={() => void handleSnooze()} disabled={!snoozeUntil} title={t("email.snoozeEmail")}><Clock3 className="me-1 h-4 w-4" />{t("email.snoozeEmail")}</Button>
+            <Button type="button" variant="ghost" size="sm" className="shrink-0 whitespace-nowrap toolbar-text-btn" onClick={() => void handleCategorize()} disabled={aiBusy} title={t("email.categoryAction")}>{t("email.categoryAction")}</Button>
+            <Button type="button" variant="ghost" size="sm" className="shrink-0 whitespace-nowrap toolbar-text-btn" onClick={() => void handleLoadActions()} disabled={actionsBusy} title={t("email.actionCenter")}><ListTodo className="me-1 h-4 w-4" />{t("email.actionCenter")}</Button>
+          <div className="flex shrink-0 items-center gap-1">
+            <input type="datetime-local" value={snoozeUntil} onChange={(event) => setSnoozeUntil(event.target.value)} min={new Date(Date.now() + 60_000).toISOString().slice(0, 16)} className="h-8 w-36 shrink-0 rounded-md border bg-background px-1 text-xs" aria-label={t("email.snoozeUntil")} />
+            <Button type="button" variant="ghost" size="sm" className="shrink-0 whitespace-nowrap toolbar-text-btn" onClick={() => void handleSnooze()} disabled={!snoozeUntil} title={t("email.snoozeEmail")}><Clock3 className="me-1 h-4 w-4" />{t("email.snoozeEmail")}</Button>
           </div>
-          <div className="flex items-center gap-1">
-            <input type="datetime-local" value={followUpReminder} onChange={(event) => setFollowUpReminder(event.target.value)} min={new Date(Date.now() + 60_000).toISOString().slice(0, 16)} className="h-8 w-36 rounded-md border bg-background px-1 text-xs" aria-label={t("email.followUpReminder")} />
-            <Button type="button" variant="ghost" size="sm" onClick={() => void handleCreateFollowUp()} disabled={!followUpReminder} title={t("email.followUpReminder")}><Clock3 className="me-1 h-4 w-4" />{t("email.followUpReminder")}</Button>
+          <div className="flex shrink-0 items-center gap-1">
+            <input type="datetime-local" value={followUpReminder} onChange={(event) => setFollowUpReminder(event.target.value)} min={new Date(Date.now() + 60_000).toISOString().slice(0, 16)} className="h-8 w-36 shrink-0 rounded-md border bg-background px-1 text-xs" aria-label={t("email.followUpReminder")} />
+            <Button type="button" variant="ghost" size="sm" className="shrink-0 whitespace-nowrap toolbar-text-btn" onClick={() => void handleCreateFollowUp()} disabled={!followUpReminder} title={t("email.followUpReminder")}><Clock3 className="me-1 h-4 w-4" />{t("email.followUpReminder")}</Button>
           </div>
-          <Button type="button" variant="ghost" size="sm" onClick={openTaskForm} disabled={productivityBusy} title={t("email.createTask")}><ListTodo className="me-1 h-4 w-4" />{t("email.createTask")}</Button>
-          <Button type="button" variant="ghost" size="sm" onClick={() => void openEventForm()} disabled={productivityBusy} title={t("email.createEvent")}><CalendarDays className="me-1 h-4 w-4" />{productivityBusy ? <Loader2 className="me-1 h-4 w-4 animate-spin" /> : null}{t("email.createEvent")}</Button>
+          <Button type="button" variant="ghost" size="sm" className="shrink-0 whitespace-nowrap toolbar-text-btn" onClick={openTaskForm} disabled={productivityBusy} title={t("email.createTask")}><ListTodo className="me-1 h-4 w-4" />{t("email.createTask")}</Button>
+          <Button type="button" variant="ghost" size="sm" className="shrink-0 whitespace-nowrap toolbar-text-btn" onClick={() => void openEventForm()} disabled={productivityBusy} title={t("email.createEvent")}><CalendarDays className="me-1 h-4 w-4" />{productivityBusy ? <Loader2 className="me-1 h-4 w-4 animate-spin" /> : null}{t("email.createEvent")}</Button>
         </div>
 
         <div className="flex shrink-0 items-center gap-1">

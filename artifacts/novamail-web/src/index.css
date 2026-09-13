@@ -212,6 +212,14 @@ body {
   display: none;
 }
 
+/* Mobile-only: let text-labelled toolbar buttons auto-size instead of
+   inheriting the fixed icon-button width, preventing text overlap. */
+@media (max-width: 767px) {
+  .novamail-global-reader .email-detail-toolbar .toolbar-text-btn {
+    width: auto;
+  }
+}
+
 .compose-footer {
   padding-bottom: max(0.75rem, env(safe-area-inset-bottom));
 }
