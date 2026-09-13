@@ -1,0 +1,20 @@
+{
+  "title": "Akıllı posta asistanı",
+  "subtitle": "Tek bir yerden yazın, yeniden ifade edin, kısaltın veya hızlı yanıt oluşturun.",
+  "backToInbox": "Gelen kutusuna dön",
+  "draftLabel": "Taslak",
+  "draftDescription": "Kısa talimatlardan mesaj yazın.",
+  "rephraseLabel": "Yeniden ifade et",
+  "rephraseDescription": "Metni daha net ve profesyonel hale getirin.",
+  "shortenLabel": "Kısalt",
+  "shortenDescription": "Anlamı koruyarak mesaj uzunluğunu azaltın.",
+  "quickReplyLabel": "Hızlı yanıt",
+  "quickReplyDescription": "Kısa ve uygun bir yanıt oluşturun.",
+  "instructionPlaceholder": "AI için talimatlarınızı yazın",
+  "contextPlaceholder": "Metin veya konuşma bağlamı (isteğe bağlı)",
+  "run": "Asistanı çalıştır",
+  "generating": "Oluşturuluyor…",
+  "result": "Sonuç",
+  "notConfigured": "AI sağlayıcısı yapılandırılmamış; içerik oluşturulmadı.",
+  "noResponse": "Sağlayıcı hiçbir öneri döndürmedi."
+}

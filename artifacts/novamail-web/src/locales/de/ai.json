@@ -1,0 +1,20 @@
+{
+  "title": "Intelligenter E-Mail-Assistent",
+  "subtitle": "Schreiben, umformulieren, kürzen oder eine schnelle Antwort erstellen – alles an einem Ort.",
+  "backToInbox": "Zurück zum Posteingang",
+  "draftLabel": "Entwurf",
+  "draftDescription": "Eine Nachricht aus kurzen Anweisungen schreiben.",
+  "rephraseLabel": "Umformulieren",
+  "rephraseDescription": "Text klarer und professioneller gestalten.",
+  "shortenLabel": "Kürzen",
+  "shortenDescription": "Nachrichtenlänge reduzieren und die Bedeutung beibehalten.",
+  "quickReplyLabel": "Schnellantwort",
+  "quickReplyDescription": "Eine prägnante und angemessene Antwort erstellen.",
+  "instructionPlaceholder": "Geben Sie Ihre Anweisungen für die KI ein",
+  "contextPlaceholder": "Text oder Gesprächskontext (optional)",
+  "run": "Assistent ausführen",
+  "generating": "Wird erstellt…",
+  "result": "Ergebnis",
+  "notConfigured": "KI-Anbieter ist nicht konfiguriert; es wurde kein Inhalt generiert.",
+  "noResponse": "Der Anbieter hat keinen Vorschlag zurückgegeben."
+}

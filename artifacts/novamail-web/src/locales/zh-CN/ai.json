@@ -1,0 +1,20 @@
+{
+  "title": "智能邮件助手",
+  "subtitle": "在一个地方撰写、改写、缩短或创建快速回复。",
+  "backToInbox": "返回收件箱",
+  "draftLabel": "草稿",
+  "draftDescription": "根据简要说明撰写邮件。",
+  "rephraseLabel": "改写",
+  "rephraseDescription": "使文本更清晰、更专业。",
+  "shortenLabel": "缩短",
+  "shortenDescription": "在保持含义的同时缩短邮件长度。",
+  "quickReplyLabel": "快速回复",
+  "quickReplyDescription": "创建简洁得体的回复。",
+  "instructionPlaceholder": "输入您的 AI 指令",
+  "contextPlaceholder": "文本或对话上下文（可选）",
+  "run": "运行助手",
+  "generating": "生成中…",
+  "result": "结果",
+  "notConfigured": "AI 提供商未配置；未生成内容。",
+  "noResponse": "提供商未返回建议。"
+}

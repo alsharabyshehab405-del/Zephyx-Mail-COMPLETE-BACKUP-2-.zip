@@ -1,0 +1,19 @@
+{
+  "title": "Sign in to Zephyx Mail",
+  "subtitle": "Welcome back. Your inbox is ready.",
+  "email": "Email address",
+  "password": "Password",
+  "submit": "Sign in",
+  "noAccount": "Don't have an account?",
+  "registerLink": "Create one",
+  "forgotPassword": "Forgot password?",
+  "invalidCredentials": "Email or password is incorrect",
+  "twoFactorTitle": "Two-factor authentication",
+  "twoFactorDescription": "Enter the 6-digit code from your authenticator app, or use a recovery code.",
+  "twoFactorCode": "Verification code",
+  "verifyAndSignIn": "Verify and sign in",
+  "backToPassword": "Back to password",
+  "invalidVerificationCode": "Invalid verification code",
+  "showPassword": "Show password",
+  "hidePassword": "Hide password"
+}

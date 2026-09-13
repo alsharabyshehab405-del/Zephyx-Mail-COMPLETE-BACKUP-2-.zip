@@ -1,0 +1,19 @@
+{
+  "title": "Bei Zephyx Mail anmelden",
+  "subtitle": "Willkommen zurück. Dein Posteingang ist bereit.",
+  "email": "E-Mail-Adresse",
+  "password": "Passwort",
+  "submit": "Anmelden",
+  "noAccount": "Noch kein Konto?",
+  "registerLink": "Konto erstellen",
+  "forgotPassword": "Passwort vergessen?",
+  "invalidCredentials": "E-Mail-Adresse oder Passwort ist falsch",
+  "twoFactorTitle": "Zwei-Faktor-Authentifizierung",
+  "twoFactorDescription": "Geben Sie den 6-stelligen Code aus Ihrer Authenticator-App ein oder verwenden Sie einen Wiederherstellungscode.",
+  "twoFactorCode": "Verifizierungscode",
+  "verifyAndSignIn": "Verifizieren und anmelden",
+  "backToPassword": "Zurück zum Passwort",
+  "invalidVerificationCode": "Ungültiger Verifizierungscode",
+  "showPassword": "Passwort anzeigen",
+  "hidePassword": "Passwort ausblenden"
+}

@@ -1,0 +1,20 @@
+{
+  "title": "スマートメールアシスタント",
+  "subtitle": "一つの場所から書く・言い換える・短くする・クイック返信を作成。",
+  "backToInbox": "受信箱に戻る",
+  "draftLabel": "下書き",
+  "draftDescription": "短い指示からメッセージを書く。",
+  "rephraseLabel": "言い換え",
+  "rephraseDescription": "テキストをより明確でプロフェッショナルにする。",
+  "shortenLabel": "短縮",
+  "shortenDescription": "意味を保ちながらメッセージの長さを減らす。",
+  "quickReplyLabel": "クイック返信",
+  "quickReplyDescription": "簡潔で適切な返信を作成する。",
+  "instructionPlaceholder": "AIの指示を入力してください",
+  "contextPlaceholder": "テキストまたは会話のコンテキスト（任意）",
+  "run": "アシスタントを実行",
+  "generating": "生成中…",
+  "result": "結果",
+  "notConfigured": "AIプロバイダーが設定されていません；コンテンツは生成されませんでした。",
+  "noResponse": "プロバイダーは提案を返しませんでした。"
+}

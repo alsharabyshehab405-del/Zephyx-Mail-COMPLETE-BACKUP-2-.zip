@@ -1,0 +1,9 @@
+{
+  "productivity": "生産性",
+  "title": "タスク",
+  "loading": "タスクを読み込み中…",
+  "empty": "まだタスクはありません。リーダーからメールをタスクに変換してください。",
+  "priority": "優先度",
+  "due": "期限",
+  "completeAria": "完了 {title}"
+}

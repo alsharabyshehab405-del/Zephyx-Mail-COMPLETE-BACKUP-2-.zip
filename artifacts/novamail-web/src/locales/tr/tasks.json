@@ -1,0 +1,9 @@
+{
+  "productivity": "Verimlilik",
+  "title": "Görevler",
+  "loading": "Görevler yükleniyor…",
+  "empty": "Henüz görev yok. Okuyucudan bir e-postayı göreve dönüştürün.",
+  "priority": "Öncelik",
+  "due": "Bitiş",
+  "completeAria": "Tamamla {title}"
+}

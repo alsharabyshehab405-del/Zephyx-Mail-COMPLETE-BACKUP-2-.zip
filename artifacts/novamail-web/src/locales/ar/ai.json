@@ -1,0 +1,20 @@
+{
+  "title": "مساعد البريد الذكي",
+  "subtitle": "اكتب، أعد الصياغة، اختصر، أو أنشئ رداً سريعاً من مكان واحد.",
+  "backToInbox": "العودة إلى الوارد",
+  "draftLabel": "كتابة مسودة",
+  "draftDescription": "اكتب رسالة من تعليمات قصيرة.",
+  "rephraseLabel": "إعادة الصياغة",
+  "rephraseDescription": "اجعل النص أوضح وأكثر احترافية.",
+  "shortenLabel": "اختصار",
+  "shortenDescription": "قلّل طول الرسالة مع الحفاظ على المعنى.",
+  "quickReplyLabel": "رد سريع",
+  "quickReplyDescription": "أنشئ رداً مختصراً ومناسباً.",
+  "instructionPlaceholder": "اكتب تعليماتك للذكاء الاصطناعي",
+  "contextPlaceholder": "النص أو سياق المحادثة (اختياري)",
+  "run": "تشغيل المساعد",
+  "generating": "جارٍ الإنشاء…",
+  "result": "النتيجة",
+  "notConfigured": "مزود الذكاء الاصطناعي غير مهيأ؛ لم يتم إنشاء محتوى.",
+  "noResponse": "لم يُرجع المزوّد اقتراحًا."
+}

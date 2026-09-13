@@ -1,0 +1,20 @@
+{
+  "title": "Assistant de messagerie intelligent",
+  "subtitle": "Écrivez, reformulez, raccourcissez ou créez une réponse rapide depuis un seul endroit.",
+  "backToInbox": "Retour à la boîte de réception",
+  "draftLabel": "Brouillon",
+  "draftDescription": "Écrire un message à partir de brèves instructions.",
+  "rephraseLabel": "Reformuler",
+  "rephraseDescription": "Rendre le texte plus clair et plus professionnel.",
+  "shortenLabel": "Raccourcir",
+  "shortenDescription": "Réduire la longueur du message tout en gardant le sens.",
+  "quickReplyLabel": "Réponse rapide",
+  "quickReplyDescription": "Créer une réponse concise et appropriée.",
+  "instructionPlaceholder": "Saisissez vos instructions pour l'IA",
+  "contextPlaceholder": "Texte ou contexte de conversation (facultatif)",
+  "run": "Lancer l'assistant",
+  "generating": "Génération…",
+  "result": "Résultat",
+  "notConfigured": "Le fournisseur d'IA n'est pas configuré ; aucun contenu n'a été généré.",
+  "noResponse": "Le fournisseur n'a renvoyé aucune suggestion."
+}

@@ -1,0 +1,215 @@
+# Base44 development compose for the Zephyx Mail monorepo.
+# Runs the API + web from bind-mounted live source with live reload.
+# Web (Vite dev, HMR) is the public entry point on host port 3000 and proxies
+# /api to the API service (single-origin wiring for cookie/session auth).
+
+services:
+  postgres:
+    image: postgres:16-alpine
+    container_name: novamail_postgres
+    restart: unless-stopped
+    environment:
+      POSTGRES_USER: zephyx
+      POSTGRES_PASSWORD: zephyx
+      POSTGRES_DB: zephyx
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U zephyx -d zephyx"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+    networks:
+      - novamail_network
+
+  redis:
+    image: redis:7.4-alpine
+    container_name: novamail_redis
+    restart: unless-stopped
+    command: ["redis-server", "--appendonly", "yes"]
+    volumes:
+      - redis_data:/data
+    healthcheck:
+      test: ["CMD", "redis-cli", "ping"]
+      interval: 5s
+      timeout: 3s
+      retries: 10
+    networks:
+      - novamail_network
+
+  migrate:
+    build:
+      context: .
+      dockerfile: Dockerfile.dev
+    container_name: novamail_migrate
+    restart: "no"
+    depends_on:
+      postgres:
+        condition: service_healthy
+    environment:
+      DATABASE_URL: postgresql://zephyx:zephyx@postgres:5432/zephyx
+    volumes:
+      - ./:/app
+      - /app/node_modules
+      - /app/lib/api-client-react/node_modules
+      - /app/lib/api-spec/node_modules
+      - /app/lib/api-zod/node_modules
+      - /app/lib/db/node_modules
+      - /app/artifacts/api-server/node_modules
+      - /app/artifacts/novamail-web/node_modules
+    command: ["pnpm", "--filter", "@workspace/api-server", "run", "prisma:migrate:deploy"]
+    networks:
+      - novamail_network
+
+  api:
+    build:
+      context: .
+      dockerfile: Dockerfile.dev
+    container_name: novamail_api
+    restart: unless-stopped
+    depends_on:
+      postgres:
+        condition: service_healthy
+      redis:
+        condition: service_healthy
+      migrate:
+        condition: service_completed_successfully
+    environment:
+      NODE_ENV: development
+      PORT: "5000"
+      DATABASE_URL: postgresql://zephyx:zephyx@postgres:5432/zephyx
+      REDIS_URL: redis://redis:6379
+      QUEUE_PREFIX: zephyx
+      SCHEDULER_ENABLED: "false"
+      APP_NAME: "Zephyx Mail"
+      APP_BASE_URL: http://localhost:3000
+      NOVAMAIL_WEB_URL: http://localhost:3000
+      ALLOWED_ORIGINS: ""
+      LOG_LEVEL: info
+      JWT_ACCESS_SECRET: dev-access-secret-0123456789abcdef0123456789abcdef
+      JWT_REFRESH_SECRET: dev-refresh-secret-0123456789abcdef0123456789abcdef
+      JWT_ACCESS_EXPIRY: 15m
+      SESSION_IP_HASH_SECRET: dev-session-ip-hash-0123456789abcdef0123456789
+      UNDO_SEND_DELAY_SECONDS: "8"
+      EMAIL_SCHEDULER_INTERVAL_MS: "1000"
+      DEFAULT_LOCALE: en
+      SSE_ENABLED: "true"
+    volumes:
+      - ./:/app
+      - /app/node_modules
+      - /app/lib/api-client-react/node_modules
+      - /app/lib/api-spec/node_modules
+      - /app/lib/api-zod/node_modules
+      - /app/lib/db/node_modules
+      - /app/artifacts/api-server/node_modules
+      - /app/artifacts/novamail-web/node_modules
+      - attachment_data:/data/attachments
+    # Build the API bundle from live source, then start it.
+    # (The API has no native watch mode; restart the service to reflect edits.)
+    command: ["sh", "-c", "pnpm --filter @workspace/api-server run build && pnpm --filter @workspace/api-server run start"]
+    networks:
+      - novamail_network
+
+  scheduler:
+    build:
+      context: .
+      dockerfile: Dockerfile.dev
+    container_name: novamail_scheduler
+    restart: unless-stopped
+    depends_on:
+      postgres:
+        condition: service_healthy
+      redis:
+        condition: service_healthy
+      migrate:
+        condition: service_completed_successfully
+    environment:
+      NODE_ENV: development
+      SCHEDULER_ENABLED: "true"
+      DATABASE_URL: postgresql://zephyx:zephyx@postgres:5432/zephyx
+      REDIS_URL: redis://redis:6379
+      QUEUE_PREFIX: zephyx
+      LOG_LEVEL: info
+    volumes:
+      - ./:/app
+      - /app/node_modules
+      - /app/lib/api-client-react/node_modules
+      - /app/lib/api-spec/node_modules
+      - /app/lib/api-zod/node_modules
+      - /app/lib/db/node_modules
+      - /app/artifacts/api-server/node_modules
+      - /app/artifacts/novamail-web/node_modules
+    command: ["sh", "-c", "pnpm --filter @workspace/api-server run build && pnpm --filter @workspace/api-server run start:scheduler"]
+    networks:
+      - novamail_network
+
+  worker:
+    build:
+      context: .
+      dockerfile: Dockerfile.dev
+    container_name: novamail_worker
+    restart: unless-stopped
+    depends_on:
+      postgres:
+        condition: service_healthy
+      redis:
+        condition: service_healthy
+      migrate:
+        condition: service_completed_successfully
+    environment:
+      NODE_ENV: development
+      DATABASE_URL: postgresql://zephyx:zephyx@postgres:5432/zephyx
+      REDIS_URL: redis://redis:6379
+      QUEUE_PREFIX: zephyx
+      LOG_LEVEL: info
+    volumes:
+      - ./:/app
+      - /app/node_modules
+      - /app/lib/api-client-react/node_modules
+      - /app/lib/api-spec/node_modules
+      - /app/lib/api-zod/node_modules
+      - /app/lib/db/node_modules
+      - /app/artifacts/api-server/node_modules
+      - /app/artifacts/novamail-web/node_modules
+      - attachment_data:/data/attachments
+    command: ["sh", "-c", "pnpm --filter @workspace/api-server run build && pnpm --filter @workspace/api-server run start:worker"]
+    networks:
+      - novamail_network
+
+  web:
+    build:
+      context: .
+      dockerfile: Dockerfile.dev
+    container_name: novamail_web
+    restart: unless-stopped
+    depends_on:
+      - api
+    environment:
+      NODE_ENV: development
+      PORT: "3000"
+      BASE_PATH: /
+      # Vite proxies /api to the API service (single-origin for the browser).
+      API_PROXY_TARGET: http://api:5000
+    volumes:
+      - ./:/app
+      - /app/node_modules
+      - /app/lib/api-client-react/node_modules
+      - /app/lib/api-spec/node_modules
+      - /app/lib/api-zod/node_modules
+      - /app/lib/db/node_modules
+      - /app/artifacts/api-server/node_modules
+      - /app/artifacts/novamail-web/node_modules
+    ports:
+      - "3000:3000"
+    command: ["pnpm", "--filter", "@workspace/novamail-web", "run", "dev"]
+    networks:
+      - novamail_network
+
+networks:
+  novamail_network:
+    driver: bridge
+
+volumes:
+  postgres_data:
+  redis_data:
+  attachment_data:

@@ -1,0 +1,20 @@
+{
+  "title": "Asisten email cerdas",
+  "subtitle": "Tulis, reformulasikan, persingkat, atau buat balasan cepat dari satu tempat.",
+  "backToInbox": "Kembali ke kotak masuk",
+  "draftLabel": "Draf",
+  "draftDescription": "Tulis pesan dari instruksi singkat.",
+  "rephraseLabel": "Reformulasikan",
+  "rephraseDescription": "Buat teks lebih jelas dan profesional.",
+  "shortenLabel": "Persingkat",
+  "shortenDescription": "Kurangi panjang pesan dengan tetap mempertahankan makna.",
+  "quickReplyLabel": "Balasan cepat",
+  "quickReplyDescription": "Buat balasan yang ringkas dan tepat.",
+  "instructionPlaceholder": "Ketik instruksi Anda untuk AI",
+  "contextPlaceholder": "Teks atau konteks percakapan (opsional)",
+  "run": "Jalankan asisten",
+  "generating": "Membuat…",
+  "result": "Hasil",
+  "notConfigured": "Penyedia AI tidak dikonfigurasi; tidak ada konten yang dibuat.",
+  "noResponse": "Penyedia tidak mengembalikan saran."
+}

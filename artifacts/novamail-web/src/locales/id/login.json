@@ -1,0 +1,19 @@
+{
+  "title": "Masuk ke Zephyx Mail",
+  "subtitle": "Selamat datang kembali. Kotak masuk Anda siap.",
+  "email": "Alamat email",
+  "password": "Kata sandi",
+  "submit": "Masuk",
+  "noAccount": "Belum punya akun?",
+  "registerLink": "Buat akun",
+  "forgotPassword": "Lupa kata sandi?",
+  "invalidCredentials": "Email atau kata sandi salah",
+  "twoFactorTitle": "Autentikasi dua faktor",
+  "twoFactorDescription": "Masukkan kode 6 digit dari aplikasi autentikator Anda, atau gunakan kode pemulihan.",
+  "twoFactorCode": "Kode verifikasi",
+  "verifyAndSignIn": "Verifikasi dan masuk",
+  "backToPassword": "Kembali ke kata sandi",
+  "invalidVerificationCode": "Kode verifikasi tidak valid",
+  "showPassword": "Tampilkan kata sandi",
+  "hidePassword": "Sembunyikan kata sandi"
+}

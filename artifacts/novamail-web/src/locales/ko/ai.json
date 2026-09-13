@@ -1,0 +1,20 @@
+{
+  "title": "스마트 메일 어시스턴트",
+  "subtitle": "한 곳에서 쓰기, 바꾸기, 줄이기 또는 빠른 답장 만들기.",
+  "backToInbox": "받은편지함으로 돌아가기",
+  "draftLabel": "초안",
+  "draftDescription": "간단한 지시에서 메시지 작성.",
+  "rephraseLabel": "바꾸기",
+  "rephraseDescription": "텍스트를 더 명확하고 전문적으로 만드세요.",
+  "shortenLabel": "줄이기",
+  "shortenDescription": "의미를 유지하면서 메시지 길이를 줄이세요.",
+  "quickReplyLabel": "빠른 답장",
+  "quickReplyDescription": "간결하고 적절한 답장을 만드세요.",
+  "instructionPlaceholder": "AI에 대한 지시를 입력하세요",
+  "contextPlaceholder": "텍스트 또는 대화 맥락 (선택 사항)",
+  "run": "어시스턴트 실행",
+  "generating": "생성 중…",
+  "result": "결과",
+  "notConfigured": "AI 제공자가 구성되지 않았습니다; 콘텐츠가 생성되지 않았습니다.",
+  "noResponse": "제공자가 제안을 반환하지 않았습니다."
+}

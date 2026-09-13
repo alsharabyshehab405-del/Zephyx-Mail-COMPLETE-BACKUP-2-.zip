@@ -1,0 +1,20 @@
+{
+  "title": "اسمارٹ میل اسسٹنٹ",
+  "subtitle": "ایک جگہ سے لکھیں، دوبارہ لکھیں، مختصر کریں یا فوری جواب بنائیں۔",
+  "backToInbox": "ان باکس پر واپس جائیں",
+  "draftLabel": "مسودہ",
+  "draftDescription": "مختصر ہدایات سے پیغام لکھیں۔",
+  "rephraseLabel": "دوبارہ لکھیں",
+  "rephraseDescription": "متن کو واضح اور زیادہ پیشہ ورانہ بنائیں۔",
+  "shortenLabel": "مختصر کریں",
+  "shortenDescription": "معنی برقرار رکھتے ہوئے پیغام کی لمبائی کم کریں۔",
+  "quickReplyLabel": "فوری جواب",
+  "quickReplyDescription": "مختصر اور مناسب جواب بنائیں۔",
+  "instructionPlaceholder": "AI کے لیے اپنی ہدایات ٹائپ کریں",
+  "contextPlaceholder": "متن یا گفتگو کا سیاق و سباق (اختیاری)",
+  "run": "اسسٹنٹ چلائیں",
+  "generating": "بن رہا ہے…",
+  "result": "نتیجہ",
+  "notConfigured": "AI فراہم کنندہ ترتیب نہیں ہے؛ کوئی مواد نہیں بنایا گیا۔",
+  "noResponse": "فراہم کنندہ نے کوئی تجویز واپس نہیں کی۔"
+}

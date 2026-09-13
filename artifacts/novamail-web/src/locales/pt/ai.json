@@ -1,0 +1,20 @@
+{
+  "title": "Assistente de e-mail inteligente",
+  "subtitle": "Escreva, reformule, encurte ou crie uma resposta rápida em um só lugar.",
+  "backToInbox": "Voltar para a caixa de entrada",
+  "draftLabel": "Rascunho",
+  "draftDescription": "Escreva uma mensagem a partir de instruções breves.",
+  "rephraseLabel": "Reformular",
+  "rephraseDescription": "Deixe o texto mais claro e profissional.",
+  "shortenLabel": "Encurtar",
+  "shortenDescription": "Reduza o comprimento da mensagem mantendo o significado.",
+  "quickReplyLabel": "Resposta rápida",
+  "quickReplyDescription": "Crie uma resposta concisa e apropriada.",
+  "instructionPlaceholder": "Digite suas instruções para a IA",
+  "contextPlaceholder": "Texto ou contexto da conversa (opcional)",
+  "run": "Executar assistente",
+  "generating": "Gerando…",
+  "result": "Resultado",
+  "notConfigured": "O provedor de IA não está configurado; nenhum conteúdo foi gerado.",
+  "noResponse": "O provedor não retornou nenhuma sugestão."
+}

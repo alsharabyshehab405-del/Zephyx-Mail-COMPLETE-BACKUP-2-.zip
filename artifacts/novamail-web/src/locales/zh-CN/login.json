@@ -1,0 +1,19 @@
+{
+  "title": "登录 Zephyx Mail",
+  "subtitle": "欢迎回来，你的收件箱已准备好。",
+  "email": "电子邮件地址",
+  "password": "密码",
+  "submit": "登录",
+  "noAccount": "还没有账户？",
+  "registerLink": "创建账户",
+  "forgotPassword": "忘记密码？",
+  "invalidCredentials": "电子邮箱或密码不正确",
+  "twoFactorTitle": "双因素认证",
+  "twoFactorDescription": "输入身份验证器应用中的6位代码，或使用恢复码。",
+  "twoFactorCode": "验证码",
+  "verifyAndSignIn": "验证并登录",
+  "backToPassword": "返回密码",
+  "invalidVerificationCode": "无效的验证码",
+  "showPassword": "显示密码",
+  "hidePassword": "隐藏密码"
+}

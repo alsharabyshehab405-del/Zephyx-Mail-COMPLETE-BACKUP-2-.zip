@@ -1,0 +1,19 @@
+{
+  "title": "Войдите в Zephyx Mail",
+  "subtitle": "Рады видеть вас снова. Ваша почта готова.",
+  "email": "Адрес электронной почты",
+  "password": "Пароль",
+  "submit": "Войти",
+  "noAccount": "Нет аккаунта?",
+  "registerLink": "Создать аккаунт",
+  "forgotPassword": "Забыли пароль?",
+  "invalidCredentials": "Неверный адрес электронной почты или пароль",
+  "twoFactorTitle": "Двухфакторная аутентификация",
+  "twoFactorDescription": "Введите 6-значный код из приложения-аутентификатора или используйте код восстановления.",
+  "twoFactorCode": "Код подтверждения",
+  "verifyAndSignIn": "Подтвердить и войти",
+  "backToPassword": "Назад к паролю",
+  "invalidVerificationCode": "Неверный код подтверждения",
+  "showPassword": "Показать пароль",
+  "hidePassword": "Скрыть пароль"
+}

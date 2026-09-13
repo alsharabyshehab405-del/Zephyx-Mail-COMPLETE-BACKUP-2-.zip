@@ -1,0 +1,9 @@
+{
+  "productivity": "생산성",
+  "title": "작업",
+  "loading": "작업 로딩 중…",
+  "empty": "아직 작업이 없습니다. 리더에서 이메일을 작업으로 변환하세요.",
+  "priority": "우선순위",
+  "due": "마감",
+  "completeAria": "완료 {title}"
+}

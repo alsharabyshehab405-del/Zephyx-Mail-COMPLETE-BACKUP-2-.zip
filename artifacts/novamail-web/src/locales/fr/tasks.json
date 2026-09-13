@@ -1,0 +1,9 @@
+{
+  "productivity": "Productivité",
+  "title": "Tâches",
+  "loading": "Chargement des tâches…",
+  "empty": "Aucune tâche pour le moment. Convertissez un e-mail en tâche depuis le lecteur.",
+  "priority": "Priorité",
+  "due": "Échéance",
+  "completeAria": "Terminer {title}"
+}

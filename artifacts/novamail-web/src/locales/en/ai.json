@@ -1,0 +1,20 @@
+{
+  "title": "Smart mail assistant",
+  "subtitle": "Write, rephrase, shorten, or create a quick reply from one place.",
+  "backToInbox": "Back to inbox",
+  "draftLabel": "Draft",
+  "draftDescription": "Write a message from brief instructions.",
+  "rephraseLabel": "Rephrase",
+  "rephraseDescription": "Make the text clearer and more professional.",
+  "shortenLabel": "Shorten",
+  "shortenDescription": "Reduce the message length while keeping the meaning.",
+  "quickReplyLabel": "Quick reply",
+  "quickReplyDescription": "Create a concise and appropriate reply.",
+  "instructionPlaceholder": "Type your instructions for AI",
+  "contextPlaceholder": "Text or conversation context (optional)",
+  "run": "Run assistant",
+  "generating": "Generating…",
+  "result": "Result",
+  "notConfigured": "AI provider is not configured; no content was generated.",
+  "noResponse": "The provider returned no suggestion."
+}

@@ -1,0 +1,19 @@
+{
+  "title": "Entrar no Zephyx Mail",
+  "subtitle": "Bem-vindo de volta. A sua caixa de entrada está pronta.",
+  "email": "Endereço de e-mail",
+  "password": "Palavra-passe",
+  "submit": "Entrar",
+  "noAccount": "Ainda não tem uma conta?",
+  "registerLink": "Criar conta",
+  "forgotPassword": "Esqueceu a palavra-passe?",
+  "invalidCredentials": "E-mail ou senha incorretos",
+  "twoFactorTitle": "Autenticação de dois fatores",
+  "twoFactorDescription": "Digite o código de 6 dígitos do seu app de autenticação, ou use um código de recuperação.",
+  "twoFactorCode": "Código de verificação",
+  "verifyAndSignIn": "Verificar e entrar",
+  "backToPassword": "Voltar para a senha",
+  "invalidVerificationCode": "Código de verificação inválido",
+  "showPassword": "Mostrar senha",
+  "hidePassword": "Ocultar senha"
+}

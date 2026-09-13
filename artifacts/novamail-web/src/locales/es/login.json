@@ -1,0 +1,19 @@
+{
+  "title": "Iniciar sesión en Zephyx Mail",
+  "subtitle": "Bienvenido de nuevo. Tu bandeja está lista.",
+  "email": "Correo electrónico",
+  "password": "Contraseña",
+  "submit": "Iniciar sesión",
+  "noAccount": "¿No tienes una cuenta?",
+  "registerLink": "Crear una",
+  "forgotPassword": "¿Olvidaste tu contraseña?",
+  "invalidCredentials": "Correo electrónico o contraseña incorrectos",
+  "twoFactorTitle": "Autenticación de dos factores",
+  "twoFactorDescription": "Ingresa el código de 6 dígitos de tu aplicación de autenticación, o usa un código de recuperación.",
+  "twoFactorCode": "Código de verificación",
+  "verifyAndSignIn": "Verificar e iniciar sesión",
+  "backToPassword": "Volver a la contraseña",
+  "invalidVerificationCode": "Código de verificación no válido",
+  "showPassword": "Mostrar contraseña",
+  "hidePassword": "Ocultar contraseña"
+}

@@ -1,0 +1,9 @@
+{
+  "productivity": "Productivity",
+  "title": "Tasks",
+  "loading": "Loading tasks…",
+  "empty": "No tasks yet. Convert an email into a task from the reader.",
+  "priority": "Priority",
+  "due": "Due",
+  "completeAria": "Complete {title}"
+}

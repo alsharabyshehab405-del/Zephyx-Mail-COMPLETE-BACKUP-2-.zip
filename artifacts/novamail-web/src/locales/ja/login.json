@@ -1,0 +1,19 @@
+{
+  "title": "Zephyx Mail にサインイン",
+  "subtitle": "おかえりなさい。受信トレイの準備ができています。",
+  "email": "メールアドレス",
+  "password": "パスワード",
+  "submit": "サインイン",
+  "noAccount": "アカウントをお持ちでないですか？",
+  "registerLink": "アカウントを作成",
+  "forgotPassword": "パスワードをお忘れですか？",
+  "invalidCredentials": "メールアドレスまたはパスワードが正しくありません",
+  "twoFactorTitle": "二要素認証",
+  "twoFactorDescription": "認証アプリの6桁コードを入力するか、リカバリーコードを使用してください。",
+  "twoFactorCode": "確認コード",
+  "verifyAndSignIn": "確認してサインイン",
+  "backToPassword": "パスワードに戻る",
+  "invalidVerificationCode": "無効な確認コード",
+  "showPassword": "パスワードを表示",
+  "hidePassword": "パスワードを非表示"
+}

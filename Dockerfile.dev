@@ -1,0 +1,31 @@
+# Base44 development image — installs all workspace dependencies (cached layer)
+# so app services can bind-mount live source over /app at runtime.
+FROM node:24-bookworm-slim
+
+# Prisma's query engine needs OpenSSL at runtime on Debian slim.
+RUN apt-get update \
+  && apt-get install -y --no-install-recommends openssl ca-certificates \
+  && rm -rf /var/lib/apt/lists/*
+
+RUN corepack enable && corepack prepare pnpm@11.21.0 --activate
+
+WORKDIR /app
+
+# Copy only manifests + prisma assets so the install layer stays cacheable
+# across source edits (full source is bind-mounted at runtime).
+COPY package.json pnpm-workspace.yaml pnpm-lock.yaml tsconfig.base.json tsconfig.json .npmrc ./
+COPY lib/ ./lib/
+COPY artifacts/api-server/package.json ./artifacts/api-server/
+COPY artifacts/novamail-web/package.json ./artifacts/novamail-web/
+COPY artifacts/api-server/prisma ./artifacts/api-server/prisma
+COPY artifacts/api-server/scripts ./artifacts/api-server/scripts
+COPY artifacts/api-server/src/generated ./artifacts/api-server/src/generated
+
+# Install the full workspace (dev + prod deps) from the lockfile.
+RUN pnpm install --frozen-lockfile
+
+# Ensure the Prisma client + query engine are generated for the API.
+RUN pnpm --filter @workspace/api-server run prisma:generate
+
+# Default command is overridden per-service in docker-compose.base44.yml.
+CMD ["echo", "Base44 dev image ready"]

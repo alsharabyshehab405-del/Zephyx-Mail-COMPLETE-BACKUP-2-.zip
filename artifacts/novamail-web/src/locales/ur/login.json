@@ -1,0 +1,19 @@
+{
+  "title": "Zephyx Mail میں سائن ان کریں",
+  "subtitle": "خوش آمدید۔ آپ کا ان باکس تیار ہے۔",
+  "email": "ای میل ایڈریس",
+  "password": "پاس ورڈ",
+  "submit": "سائن ان کریں",
+  "noAccount": "کیا آپ کے پاس اکاؤنٹ نہیں ہے؟",
+  "registerLink": "اکاؤنٹ بنائیں",
+  "forgotPassword": "پاس ورڈ بھول گئے؟",
+  "invalidCredentials": "ای میل یا پاس ورڈ درست نہیں ہے",
+  "twoFactorTitle": "دو عنصر تصدیق",
+  "twoFactorDescription": "اپنے تصدیق کنندہ ایپ سے 6 ہندسی کوڈ درج کریں، یا ریکوری کوڈ استعمال کریں۔",
+  "twoFactorCode": "تصدیق کوڈ",
+  "verifyAndSignIn": "تصدیق کریں اور سائن ان کریں",
+  "backToPassword": "پاس ورڈ پر واپس جائیں",
+  "invalidVerificationCode": "غیر درست تصدیق کوڈ",
+  "showPassword": "پاس ورڈ دکھائیں",
+  "hidePassword": "پاس ورڈ چھپائیں"
+}

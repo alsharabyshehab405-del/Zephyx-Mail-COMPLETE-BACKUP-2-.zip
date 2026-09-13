@@ -1,0 +1,9 @@
+{
+  "productivity": "Produktivitas",
+  "title": "Tugas",
+  "loading": "Memuat tugas…",
+  "empty": "Belum ada tugas. Ubah email menjadi tugas dari pembaca.",
+  "priority": "Prioritas",
+  "due": "Jatuh tempo",
+  "completeAria": "Selesaikan {title}"
+}

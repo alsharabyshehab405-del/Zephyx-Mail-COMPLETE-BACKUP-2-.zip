@@ -1,0 +1,10 @@
+{
+  "eyebrow": "Insights",
+  "title": "Email analytics",
+  "loading": "Loading analytics…",
+  "totalEmails": "Total emails",
+  "unread": "Unread",
+  "storage": "Storage",
+  "megabytes": "MB",
+  "peakActivity": "Peak activity"
+}

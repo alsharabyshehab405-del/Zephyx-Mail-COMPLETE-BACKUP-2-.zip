@@ -1,0 +1,19 @@
+{
+  "title": "تسجيل الدخول إلى Zephyx Mail",
+  "subtitle": "مرحبًا بعودتك. بريدك جاهز.",
+  "email": "البريد الإلكتروني",
+  "password": "كلمة المرور",
+  "submit": "تسجيل الدخول",
+  "noAccount": "ليس لديك حساب؟",
+  "registerLink": "إنشاء حساب",
+  "forgotPassword": "نسيت كلمة المرور؟",
+  "invalidCredentials": "البريد الإلكتروني أو كلمة المرور غير صحيحة",
+  "twoFactorTitle": "التحقق بخطوتين",
+  "twoFactorDescription": "أدخل رمز الـ6 أرقام من تطبيق المصادقة، أو استخدم رمز استرداد.",
+  "twoFactorCode": "رمز التحقق",
+  "verifyAndSignIn": "تحقق وسجّل الدخول",
+  "backToPassword": "العودة إلى كلمة المرور",
+  "invalidVerificationCode": "رمز التحقق غير صحيح",
+  "showPassword": "إظهار كلمة المرور",
+  "hidePassword": "إخفاء كلمة المرور"
+}

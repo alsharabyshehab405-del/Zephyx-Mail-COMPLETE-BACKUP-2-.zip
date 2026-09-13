@@ -1,0 +1,9 @@
+{
+  "productivity": "效率",
+  "title": "任务",
+  "loading": "正在加载任务…",
+  "empty": "还没有任务。从阅读器中将邮件转换为任务。",
+  "priority": "优先级",
+  "due": "截止",
+  "completeAria": "完成 {title}"
+}
